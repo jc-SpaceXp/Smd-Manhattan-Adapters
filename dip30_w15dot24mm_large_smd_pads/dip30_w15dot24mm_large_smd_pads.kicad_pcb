@@ -8,7 +8,7 @@
 	)
 	(paper "A5")
 	(title_block
-		(title "Arduino Nano (DIP 30 W15.24mm) SMD Manhattan Adapter")
+		(title "DIP 30 W15.24mm SMD Manhattan Adapter")
 		(date "2024-10-11")
 		(rev "v01")
 		(comment 4 "DIP 30 W15.24mm is same form factor as Arduino Nano and STM Nucleo KB boards")
