@@ -3271,8 +3271,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "PTVS5V0Z1USKP"
-			(at 39.116 54.102 0)
+		(property "Value" "ESDB5V0WT"
+			(at 39.116 56.642 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3280,7 +3280,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:Nexperia_DSN1608-2_1.6x0.8mm"
+		(property "Footprint" "Diode_SMD:D_SOD-523"
 			(at 37.465 60.96 0)
 			(effects
 				(font
@@ -3289,7 +3289,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PTVS5V0Z1USKP.pdf"
+		(property "Datasheet" ""
 			(at 41.91 60.96 0)
 			(effects
 				(font
@@ -3298,7 +3298,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "5V, 2000W TVS unidirectional diode, DSN1608-2"
+		(property "Description" "5V TVS unidirectional diode"
+			(at 41.91 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ESDB5V0WT"
 			(at 41.91 60.96 0)
 			(effects
 				(font
