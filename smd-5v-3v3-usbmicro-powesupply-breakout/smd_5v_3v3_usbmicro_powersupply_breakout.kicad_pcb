@@ -473,6 +473,7 @@
 			(uuid "c0d34bcf-b260-41da-865a-52756adf8bfd")
 		)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_PinHeader_1.00mm.3dshapes/PinHeader_1x03_P1.00mm_Vertical_SMD_Pin1Right.wrl"
+			(hide yes)
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2800,7 +2801,7 @@
 		(descr "TO-263/D2PAK/DDPAK SMD package, http://www.infineon.com/cms/en/product/packages/PG-TO263/PG-TO263-3-1/")
 		(tags "D2PAK DDPAK TO-263 D2PAK-3 TO-263-3 SOT-404")
 		(property "Reference" "U1"
-			(at 0 -6.65 360)
+			(at 0 -6.65 0)
 			(layer "F.SilkS")
 			(uuid "00202941-ce60-4892-9859-5975ab86a9e7")
 			(effects
@@ -2811,7 +2812,7 @@
 			)
 		)
 		(property "Value" "LMS1585AIS-3.3"
-			(at 0 6.65 360)
+			(at 0 6.65 0)
 			(layer "F.Fab")
 			(uuid "3c73b8f5-3dc2-4cd6-a7b5-65d0c7904730")
 			(effects
@@ -2822,7 +2823,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:TO-263-3_TabPin2"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "8498de0b-cbf0-4b57-a455-3ea7aceb814b")
@@ -2834,7 +2835,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm1084.pdf"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2691ce35-adb7-4f1a-9c63-7e8b50d903fd")
@@ -2846,7 +2847,7 @@
 			)
 		)
 		(property "Description" "5A 27V Linear Regulator, Fixed Output 3.3V, TO-220/TO-263"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a8884917-a8ba-404d-aacf-bdf2e15caa93")
@@ -3138,7 +3139,7 @@
 			(uuid "57a67cea-8e66-4188-9955-4814a2653dda")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "bb6b5906-0a52-4b04-a2a0-828e6210f00a")
 			(effects
