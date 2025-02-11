@@ -3,4 +3,5 @@
 ** PCB Drawing
 [[file:pcb.pdf]]
 ** 3D PCB Models
-[[file:pcb_3d.jpg]]
+[[file:pcb_3d_front.png]]
+[[file:pcb_3d_back.png]]
