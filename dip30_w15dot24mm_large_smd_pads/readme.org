@@ -1,0 +1,6 @@
+* DIP30 W15.24mm Large SMD Pads
+- Manhattan adapter for a DIP30 W15.24mm package e.g. STM32 Nucleo KB devices, Arduino Nano etc.
+** PCB Drawing
+[[file:pcb.pdf]]
+** 3D PCB Models
+[[file:pcb_3d.jpg]]
