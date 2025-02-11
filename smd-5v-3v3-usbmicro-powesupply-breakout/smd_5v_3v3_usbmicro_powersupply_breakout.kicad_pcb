@@ -10,7 +10,7 @@
 	(title_block
 		(title "5V & 3V3 USB Micro Power Supply Breakout Board")
 		(date "2025-02-11")
-		(rev "v01")
+		(rev "v02")
 	)
 	(layers
 		(0 "F.Cu" signal)

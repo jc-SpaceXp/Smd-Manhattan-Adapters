@@ -6,8 +6,8 @@
 	(paper "A5")
 	(title_block
 		(title "5V & 3V3 USB Micro Power Supply Breakout Board")
-		(date "2025-02-09")
-		(rev "v01")
+		(date "2025-02-11")
+		(rev "v02")
 		(comment 3 "With filtering and ESD protection")
 		(comment 4 "Simple 5V & 3V3 power supply from USB micro input (VBUS)")
 	)
