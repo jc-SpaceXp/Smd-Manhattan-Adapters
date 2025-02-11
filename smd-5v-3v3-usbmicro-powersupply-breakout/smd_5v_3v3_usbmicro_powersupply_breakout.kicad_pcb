@@ -10,7 +10,7 @@
 	(title_block
 		(title "5V & 3V3 USB Micro Power Supply Breakout Board")
 		(date "2025-02-11")
-		(rev "v03")
+		(rev "v04")
 	)
 	(layers
 		(0 "F.Cu" signal)
@@ -1870,6 +1870,139 @@
 			(rotate
 				(xyz 0 0 0)
 			)
+		)
+	)
+	(footprint "Connector_Wire:SolderWirePad_1x01_SMD_5x10mm"
+		(layer "F.Cu")
+		(uuid "c86aca06-39ef-4c25-912a-d38dfeb6b909")
+		(at 160 98)
+		(descr "Wire Pad, Square, SMD Pad,  5mm x 10mm,")
+		(tags "MesurementPoint Square SMDPad 5mmx10mm ")
+		(property "Reference" "J6"
+			(at 4 2.5 0)
+			(layer "F.SilkS")
+			(uuid "acb41d9c-4683-473d-9d60-f5297b0bb4a8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SMD GND Pad"
+			(at 0 6.35 0)
+			(layer "F.Fab")
+			(uuid "c35d676d-59b6-45e1-9b0c-549f4a6664e1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_5x10mm"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9685365b-cfd2-4314-89a1-83eb8b37dd41")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f5af8dfb-457a-4f32-9b5f-5e7a6d0f1259")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bd6e2c84-0eed-4496-a4c7-4a18d2c074d8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Connector*:*_1x??_*")
+		(path "/d02dbb67-2aff-40f7-9767-1d0bf94358da")
+		(sheetname "Root")
+		(sheetfile "smd_5v_3v3_usbmicro_powersupply_breakout.kicad_sch")
+		(attr smd exclude_from_pos_files exclude_from_bom)
+		(fp_line
+			(start -2.75 -5.25)
+			(end -2.75 5.25)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "3a11f350-0bac-40b1-9859-69e758439a71")
+		)
+		(fp_line
+			(start -2.75 5.25)
+			(end 2.75 5.25)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "abf84554-75e5-44f3-9d06-941151473e5d")
+		)
+		(fp_line
+			(start 2.75 -5.25)
+			(end -2.75 -5.25)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "5c0593d0-ba7e-4839-a616-da5238be3b8e")
+		)
+		(fp_line
+			(start 2.75 5.25)
+			(end 2.75 -5.25)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "c8efcbc3-59a1-41d4-b8fa-7cd993a89c36")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "9c1acca0-842a-4d5f-b319-b2986c74c8fa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at 0 0)
+			(size 5 10)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(net 2 "GND")
+			(pinfunction "Pin_1")
+			(pintype "passive")
+			(uuid "9479f05a-2ffc-4937-92a8-d10cf6ea1dbe")
 		)
 	)
 	(footprint "Capacitor_SMD:CP_Elec_4x4.5"
@@ -3803,7 +3936,7 @@
 		)
 	)
 	(gr_text "5V"
-		(at 152.625 104 0)
+		(at 152.625 109.25 0)
 		(layer "F.SilkS")
 		(uuid "66a0160a-c7fd-46bc-b566-448e7099b0fc")
 		(effects
@@ -3826,7 +3959,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "5V & 3V3\nUSB Micro\nPower Supply\nBreakout\nBoard v03"
+	(gr_text "5V & 3V3\nUSB Micro\nPower Supply\nBreakout\nBoard v04"
 		(at 165.25 138.25 0)
 		(layer "F.SilkS")
 		(uuid "7e54dfb4-1bb0-4907-9e7f-88792d44051f")
@@ -3834,6 +3967,18 @@
 			(font
 				(size 1 1)
 				(thickness 0.14)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "GND"
+		(at 163 102.5 0)
+		(layer "F.SilkS")
+		(uuid "a422e99a-8382-4111-ac45-845ed3f4e549")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
 			)
 			(justify left bottom)
 		)
@@ -3851,7 +3996,7 @@
 		)
 	)
 	(gr_text "GND"
-		(at 155.025 104 0)
+		(at 155.025 109.25 0)
 		(layer "F.SilkS")
 		(uuid "d5e4206d-4ba2-41ec-8cd9-6e05ffdc3080")
 		(effects
@@ -4108,12 +4253,26 @@
 				(xy 154.842328 104.706202) (xy 154.707482 104.655908) (xy 154.707483 104.655908) (xy 154.647883 104.649501)
 				(xy 154.647881 104.6495) (xy 154.647873 104.6495) (xy 154.647865 104.6495) (xy 154.5245 104.6495)
 				(xy 154.457461 104.629815) (xy 154.411706 104.577011) (xy 154.4005 104.5255) (xy 154.4005 103.186307)
-				(xy 154.400499 103.186303) (xy 154.372966 103.047883) (xy 154.365895 103.012334) (xy 154.331953 102.930393)
-				(xy 154.298013 102.848453) (xy 154.298011 102.84845) (xy 154.238936 102.760039) (xy 154.238936 102.760038)
-				(xy 154.238933 102.760036) (xy 154.199466 102.700966) (xy 152.036818 100.538318) (xy 152.003333 100.476995)
-				(xy 152.000499 100.450637) (xy 152.000499 92.952129) (xy 152.000498 92.952123) (xy 152.000497 92.952116)
-				(xy 151.994091 92.892517) (xy 151.943796 92.757669) (xy 151.899734 92.69881) (xy 151.875317 92.633348)
-				(xy 151.890168 92.565075) (xy 151.939573 92.515669) (xy 151.999001 92.5005) (xy 168.000999 92.5005)
+				(xy 154.400499 103.186303) (xy 154.372966 103.047883) (xy 154.372958 103.047844) (xy 157 103.047844)
+				(xy 157.006401 103.107372) (xy 157.006403 103.107379) (xy 157.056645 103.242086) (xy 157.056649 103.242093)
+				(xy 157.142809 103.357187) (xy 157.142812 103.35719) (xy 157.257906 103.44335) (xy 157.257913 103.443354)
+				(xy 157.39262 103.493596) (xy 157.392627 103.493598) (xy 157.452155 103.499999) (xy 157.452172 103.5)
+				(xy 159.75 103.5) (xy 160.25 103.5) (xy 162.547828 103.5) (xy 162.547844 103.499999) (xy 162.607372 103.493598)
+				(xy 162.607379 103.493596) (xy 162.742086 103.443354) (xy 162.742093 103.44335) (xy 162.857187 103.35719)
+				(xy 162.85719 103.357187) (xy 162.94335 103.242093) (xy 162.943354 103.242086) (xy 162.993596 103.107379)
+				(xy 162.993598 103.107372) (xy 162.999999 103.047844) (xy 163 103.047827) (xy 163 98.25) (xy 160.25 98.25)
+				(xy 160.25 103.5) (xy 159.75 103.5) (xy 159.75 98.25) (xy 157 98.25) (xy 157 103.047844) (xy 154.372958 103.047844)
+				(xy 154.365895 103.012334) (xy 154.331953 102.930393) (xy 154.298013 102.848453) (xy 154.298011 102.84845)
+				(xy 154.238936 102.760039) (xy 154.238936 102.760038) (xy 154.238933 102.760036) (xy 154.199466 102.700966)
+				(xy 152.036818 100.538318) (xy 152.003333 100.476995) (xy 152.000499 100.450637) (xy 152.000499 92.952129)
+				(xy 152.000498 92.952123) (xy 152.000497 92.952116) (xy 151.994091 92.892517) (xy 151.943796 92.757669)
+				(xy 151.899734 92.69881) (xy 151.875317 92.633348) (xy 151.890168 92.565075) (xy 151.939573 92.515669)
+				(xy 151.999001 92.5005) (xy 157.001623 92.5005) (xy 157.068662 92.520185) (xy 157.114417 92.572989)
+				(xy 157.124361 92.642147) (xy 157.100889 92.698812) (xy 157.056647 92.75791) (xy 157.056645 92.757913)
+				(xy 157.006403 92.89262) (xy 157.006401 92.892627) (xy 157 92.952155) (xy 157 97.75) (xy 163 97.75)
+				(xy 163 92.952172) (xy 162.999999 92.952155) (xy 162.993598 92.892627) (xy 162.993596 92.89262)
+				(xy 162.943354 92.757913) (xy 162.943352 92.75791) (xy 162.899111 92.698812) (xy 162.874693 92.633348)
+				(xy 162.889544 92.565074) (xy 162.938949 92.515669) (xy 162.998377 92.5005) (xy 168.000999 92.5005)
 				(xy 168.068038 92.520185) (xy 168.113793 92.572989) (xy 168.123737 92.642147) (xy 168.100265 92.69881)
 				(xy 168.080238 92.725562) (xy 168.056204 92.757668) (xy 168.056202 92.757671) (xy 168.005908 92.892517)
 				(xy 167.999501 92.952116) (xy 167.999501 92.952123) (xy 167.9995 92.952135) (xy 167.9995 103.04787)

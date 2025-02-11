@@ -7,7 +7,7 @@
 	(title_block
 		(title "5V & 3V3 USB Micro Power Supply Breakout Board")
 		(date "2025-02-11")
-		(rev "v03")
+		(rev "v04")
 		(comment 3 "With filtering and ESD protection")
 		(comment 4 "Simple 5V & 3V3 power supply from USB micro input (VBUS)")
 	)
@@ -2265,6 +2265,16 @@
 	)
 	(wire
 		(pts
+			(xy 60.96 124.46) (xy 67.31 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9ae1732-22b0-4778-a093-8685ebaa60fa")
+	)
+	(wire
+		(pts
 			(xy 101.6 62.23) (xy 101.6 64.77)
 		)
 		(stroke
@@ -3849,6 +3859,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 72.39 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d02dbb67-2aff-40f7-9767-1d0bf94358da")
+		(property "Reference" "J6"
+			(at 74.93 123.1899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SMD GND Pad"
+			(at 74.93 125.7299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_5x10mm"
+			(at 72.39 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 72.39 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 72.39 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "76236114-5082-4ea9-802d-7efb182cfd69")
+		)
+		(instances
+			(project "smd_5v_3v3_usbmicro_powersupply_breakout"
+				(path "/7adebb7f-893e-483f-8b11-729f4eaf6a9d"
+					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GNDREF")
 		(at 21.59 99.06 0)
 		(unit 1)
@@ -3979,6 +4056,72 @@
 			(project "smd_5v_3v3_usbmicro_powersupply_breakout"
 				(path "/7adebb7f-893e-483f-8b11-729f4eaf6a9d"
 					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDREF")
+		(at 60.96 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f35da7ed-0932-4806-9ba0-7bf29ff71549")
+		(property "Reference" "#PWR09"
+			(at 60.96 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 60.96 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 60.96 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
+			(at 60.96 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d0766b55-ee34-4b34-80bf-df40026c87ba")
+		)
+		(instances
+			(project "smd_5v_3v3_usbmicro_powersupply_breakout"
+				(path "/7adebb7f-893e-483f-8b11-729f4eaf6a9d"
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)

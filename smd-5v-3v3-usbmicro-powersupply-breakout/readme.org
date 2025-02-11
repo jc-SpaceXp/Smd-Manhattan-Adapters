@@ -1,7 +1,7 @@
 * SMD 5V & 3V3 USB Micro Power Supply Breakout
 - A filtered 5V USB VBUS line and 3V3 line via an LDO (all with ESD protection)
 ** Schematic
-[[file:schematic_v03.pdf]]
+[[file:schematic_v04.pdf]]
 ** 3D PCB Models
 [[file:pcb_3d_front.png]]
 [[file:pcb_3d_back.png]]
