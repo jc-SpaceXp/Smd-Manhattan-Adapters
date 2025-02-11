@@ -138,7 +138,7 @@
 		(descr "Wire Pad, Square, SMD Pad,  5mm x 10mm,")
 		(tags "MesurementPoint Square SMDPad 5mmx10mm ")
 		(property "Reference" "J4"
-			(at 0 -3.81 0)
+			(at 4.5 -3.81 0)
 			(layer "F.SilkS")
 			(uuid "f788c13f-588e-4149-925a-3bf7c3ae390c")
 			(effects
@@ -538,7 +538,7 @@
 		(descr "SMD capacitor, aluminum electrolytic, Nichicon, 4.0x4.5mm")
 		(tags "capacitor electrolytic")
 		(property "Reference" "C3"
-			(at 0 -3.2 0)
+			(at 4.5 0 0)
 			(layer "F.SilkS")
 			(uuid "97a398a6-18dd-4c4b-b6ff-daef5d1a6f7a")
 			(effects
@@ -1533,7 +1533,7 @@
 		(descr "Wire Pad, Square, SMD Pad,  5mm x 10mm,")
 		(tags "MesurementPoint Square SMDPad 5mmx10mm ")
 		(property "Reference" "J5"
-			(at 0 -3.81 0)
+			(at -4.5 -3.81 0)
 			(layer "F.SilkS")
 			(uuid "959a24c3-f838-4af2-9c6e-599461eb4db8")
 			(effects
@@ -2110,7 +2110,7 @@
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C2"
-			(at 0 -1.43 360)
+			(at 2.775 0 0)
 			(layer "F.SilkS")
 			(uuid "88764b5a-801a-4a69-a4f0-fdc4b3654e3f")
 			(effects
@@ -2121,7 +2121,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "620305a6-ca8f-4272-9176-12b0f1f5159a")
 			(effects
@@ -2276,7 +2276,7 @@
 			(uuid "b4e2d6a6-01c0-42a6-aecd-f027794ea881")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "fe9a2bc5-b5a6-46e4-8af6-9ff8d56ccc4e")
 			(effects
@@ -3643,7 +3643,7 @@
 			(uuid "3f72ef8f-711b-425a-af20-b5f7debad45b")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.27 360)
+			(at 0 1.27 0)
 			(layer "F.Fab")
 			(uuid "552edb13-1467-4d4a-b575-bbc240b54d19")
 			(effects
