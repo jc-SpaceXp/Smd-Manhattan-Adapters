@@ -7,7 +7,7 @@
 	(title_block
 		(title "5V & 3V3 USB Micro Power Supply Breakout Board")
 		(date "2025-02-11")
-		(rev "v02")
+		(rev "v03")
 		(comment 3 "With filtering and ESD protection")
 		(comment 4 "Simple 5V & 3V3 power supply from USB micro input (VBUS)")
 	)
@@ -1881,12 +1881,6 @@
 		(color 0 0 0 0)
 		(uuid "e3a498e4-d92b-4dc7-bd31-26939f1ac116")
 	)
-	(junction
-		(at 135.89 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f135493f-3d19-4572-b4e0-0ba9a7526f8c")
-	)
 	(no_connect
 		(at 57.15 62.23)
 		(uuid "3f0a4ac9-6903-401f-89b1-c3cc7181d153")
@@ -2181,16 +2175,6 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 63.5) (xy 135.89 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ddfceea-8a9d-4b48-a09e-c118557a99d9")
-	)
-	(wire
-		(pts
 			(xy 21.59 111.76) (xy 27.94 111.76)
 		)
 		(stroke
@@ -2218,16 +2202,6 @@
 			(type default)
 		)
 		(uuid "7aaf2489-b969-4c2f-9966-bda16422ef39")
-	)
-	(wire
-		(pts
-			(xy 135.89 52.07) (xy 135.89 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "904e47c0-67c8-4e81-873f-3349fd5f48ce")
 	)
 	(wire
 		(pts
@@ -2288,16 +2262,6 @@
 			(type default)
 		)
 		(uuid "a88f65b9-ab81-440c-b62e-f63e7762013c")
-	)
-	(wire
-		(pts
-			(xy 135.89 67.31) (xy 151.13 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b485daaa-aa26-4280-9236-961834eae261")
 	)
 	(wire
 		(pts
@@ -2419,75 +2383,15 @@
 		)
 		(uuid "ffe42363-cba0-46aa-8f09-f8ce2c95ecc4")
 	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 135.89 59.69 0)
-		(unit 1)
+	(text "C3 acts as an \ninput capacitor for the LDO"
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "06c82bc0-b797-485c-9b23-bbfadf2c1882")
-		(property "Reference" "C4"
-			(at 139.7 57.5309 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
+		(at 136.398 59.944 0)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
 		)
-		(property "Value" "10u"
-			(at 139.7 60.0709 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_4x4.5"
-			(at 136.8552 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 135.89 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 135.89 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fdafc3d9-f302-4652-b8b3-4932db6e937a")
-		)
-		(pin "2"
-			(uuid "75c379ed-451f-41f1-9016-aba83c1f2a83")
-		)
-		(instances
-			(project "smd_5v_3v3_usbmicro_powersupply_breakout"
-				(path "/7adebb7f-893e-483f-8b11-729f4eaf6a9d"
-					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
+		(uuid "b731d2e5-c994-43a3-a8e9-04e61279e975")
 	)
 	(symbol
 		(lib_id "power:GNDREF")
@@ -4156,7 +4060,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "faefc990-aaca-44ec-b87c-78047c8bd283")
-		(property "Reference" "C5"
+		(property "Reference" "C4"
 			(at 170.18 57.5309 0)
 			(effects
 				(font
@@ -4210,7 +4114,7 @@
 		(instances
 			(project "smd_5v_3v3_usbmicro_powersupply_breakout"
 				(path "/7adebb7f-893e-483f-8b11-729f4eaf6a9d"
-					(reference "C5")
+					(reference "C4")
 					(unit 1)
 				)
 			)
