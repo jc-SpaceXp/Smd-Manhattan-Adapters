@@ -29,6 +29,6 @@
 **** Capture 2
 [[file:oscilloscope_captures/3v3_ldo/SDS814X_HD_PNG_2_01.png]]
 [[file:oscilloscope_captures/3v3_ldo/SDS814X_HD_PNG_2_02.png]]
-- Very stable output with the worst ripple being approx 17mV
-- Given the mean of the signal is 3.294V a 17mV ripple is well within spec for the min/max Vout for a 5V signal on the datasheet
+- Very stable output with the ripple being around 20-30mV
+- Given the mean of the signal is 3.294V a 30mV ripple is well within spec for the min/max Vout for a 5V signal on the datasheet
 
