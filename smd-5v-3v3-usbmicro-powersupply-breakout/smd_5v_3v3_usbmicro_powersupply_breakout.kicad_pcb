@@ -1,7 +1,7 @@
 (kicad_pcb
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(general
 		(thickness 1.6)
 		(legacy_teardrops no)
@@ -14,34 +14,34 @@
 	)
 	(layers
 		(0 "F.Cu" signal)
-		(31 "B.Cu" signal)
-		(32 "B.Adhes" user "B.Adhesive")
-		(33 "F.Adhes" user "F.Adhesive")
-		(34 "B.Paste" user)
-		(35 "F.Paste" user)
-		(36 "B.SilkS" user "B.Silkscreen")
-		(37 "F.SilkS" user "F.Silkscreen")
-		(38 "B.Mask" user)
-		(39 "F.Mask" user)
-		(40 "Dwgs.User" user "User.Drawings")
-		(41 "Cmts.User" user "User.Comments")
-		(42 "Eco1.User" user "User.Eco1")
-		(43 "Eco2.User" user "User.Eco2")
-		(44 "Edge.Cuts" user)
-		(45 "Margin" user)
-		(46 "B.CrtYd" user "B.Courtyard")
-		(47 "F.CrtYd" user "F.Courtyard")
-		(48 "B.Fab" user)
-		(49 "F.Fab" user)
-		(50 "User.1" user)
-		(51 "User.2" user)
-		(52 "User.3" user)
-		(53 "User.4" user)
-		(54 "User.5" user)
-		(55 "User.6" user)
-		(56 "User.7" user)
-		(57 "User.8" user)
-		(58 "User.9" user)
+		(2 "B.Cu" signal)
+		(9 "F.Adhes" user "F.Adhesive")
+		(11 "B.Adhes" user "B.Adhesive")
+		(13 "F.Paste" user)
+		(15 "B.Paste" user)
+		(5 "F.SilkS" user "F.Silkscreen")
+		(7 "B.SilkS" user "B.Silkscreen")
+		(1 "F.Mask" user)
+		(3 "B.Mask" user)
+		(17 "Dwgs.User" user "User.Drawings")
+		(19 "Cmts.User" user "User.Comments")
+		(21 "Eco1.User" user "User.Eco1")
+		(23 "Eco2.User" user "User.Eco2")
+		(25 "Edge.Cuts" user)
+		(27 "Margin" user)
+		(31 "F.CrtYd" user "F.Courtyard")
+		(29 "B.CrtYd" user "B.Courtyard")
+		(35 "F.Fab" user)
+		(33 "B.Fab" user)
+		(39 "User.1" user)
+		(41 "User.2" user)
+		(43 "User.3" user)
+		(45 "User.4" user)
+		(47 "User.5" user)
+		(49 "User.6" user)
+		(51 "User.7" user)
+		(53 "User.8" user)
+		(55 "User.9" user)
 	)
 	(setup
 		(stackup
@@ -85,9 +85,10 @@
 		)
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
+		(tenting front back)
 		(pcbplotparams
-			(layerselection 0x00010fc_ffffffff)
-			(plot_on_all_layers_selection 0x0000000_00000000)
+			(layerselection 0x00000000_00000000_55555555_5755f5ff)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions no)
 			(usegerberattributes yes)
@@ -97,7 +98,6 @@
 			(dashed_line_gap_ratio 3.000000)
 			(svgprecision 4)
 			(plotframeref no)
-			(viasonmask no)
 			(mode 1)
 			(useauxorigin no)
 			(hpglpennumber 1)
@@ -105,16 +105,20 @@
 			(hpglpendiameter 15.000000)
 			(pdf_front_fp_property_popups yes)
 			(pdf_back_fp_property_popups yes)
+			(pdf_metadata yes)
+			(pdf_single_document no)
 			(dxfpolygonmode yes)
 			(dxfimperialunits yes)
 			(dxfusepcbnewfont yes)
 			(psnegative no)
 			(psa4output no)
-			(plotreference yes)
-			(plotvalue yes)
-			(plotfptext yes)
+			(plot_black_and_white yes)
 			(plotinvisibletext no)
 			(sketchpadsonfab no)
+			(plotpadnumbers no)
+			(hidednponfab no)
+			(sketchdnponfab yes)
+			(crossoutdnponfab yes)
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
@@ -159,19 +163,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_5x10mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "712df783-0eca-46c1-badb-4068c0a494bb")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -200,7 +191,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/9bf938e9-6f5e-405c-a406-a58048c7e7f2")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "smd_5v_3v3_usbmicro_powersupply_breakout.kicad_sch")
 		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_line
@@ -257,12 +248,13 @@
 		(pad "1" smd rect
 			(at 0 0)
 			(size 5 10)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 3 "+5V")
 			(pinfunction "Pin_1")
 			(pintype "passive")
 			(uuid "afbcc7ac-175f-45fa-97bd-34d5836ff36d")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 		(layer "F.Cu")
@@ -288,19 +280,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "141aa0cc-2b89-4235-bc2f-d91b13c9a28f")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -333,7 +312,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/232bd757-2f0c-4a52-adf0-d4a9a6f056f0")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "smd_5v_3v3_usbmicro_powersupply_breakout.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -519,6 +498,7 @@
 			(pintype "passive")
 			(uuid "600aac85-6a1d-476a-ac69-1ea48866914a")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -559,19 +539,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_4x4.5"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ddd6c706-4a5f-4c42-9e4c-a7fd257f2678")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
@@ -600,7 +567,7 @@
 		)
 		(property ki_fp_filters "CP_*")
 		(path "/39bd4a79-02ab-43d9-9e0d-7826d0198d4d")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "smd_5v_3v3_usbmicro_powersupply_breakout.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -930,7 +897,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "020a932e-aafa-4642-8a0e-0d465844176a")
 		)
@@ -948,7 +915,7 @@
 		(pad "1" smd roundrect
 			(at -1.8 0 180)
 			(size 2.6 1.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.15625)
 			(net 3 "+5V")
 			(pintype "passive")
@@ -957,12 +924,13 @@
 		(pad "2" smd roundrect
 			(at 1.8 0 180)
 			(size 2.6 1.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.15625)
 			(net 2 "GND")
 			(pintype "passive")
 			(uuid "b3e02969-d85b-43a0-8fca-4275fbada6c5")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/CP_Elec_4x4.5.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -999,19 +967,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Connector_USB:USB_Micro-B_Amphenol_10118194-0001LF_Horizontal"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "03b43081-3379-410d-ab01-20ae7df9b280")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -1057,7 +1012,7 @@
 		)
 		(property ki_fp_filters "USB*")
 		(path "/a3d10a59-1ccc-403a-94cf-063327e95f5d")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "smd_5v_3v3_usbmicro_powersupply_breakout.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -1379,7 +1334,7 @@
 		(pad "1" smd roundrect
 			(at -1.3 -1.4)
 			(size 0.4 1.35)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 1 "VBUS")
 			(pinfunction "VBUS")
@@ -1389,7 +1344,7 @@
 		(pad "2" smd roundrect
 			(at -0.65 -1.4)
 			(size 0.4 1.35)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 6 "unconnected-(J1-D--Pad2)")
 			(pinfunction "D-")
@@ -1399,7 +1354,7 @@
 		(pad "3" smd roundrect
 			(at 0 -1.4)
 			(size 0.4 1.35)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 7 "unconnected-(J1-D+-Pad3)")
 			(pinfunction "D+")
@@ -1409,7 +1364,7 @@
 		(pad "4" smd roundrect
 			(at 0.65 -1.4)
 			(size 0.4 1.35)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 5 "unconnected-(J1-ID-Pad4)")
 			(pinfunction "ID")
@@ -1419,7 +1374,7 @@
 		(pad "5" smd roundrect
 			(at 1.3 -1.4)
 			(size 0.4 1.35)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "GND")
 			(pinfunction "GND")
@@ -1441,7 +1396,7 @@
 		(pad "6" smd roundrect
 			(at -3.025 1.3)
 			(size 1.45 1.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1724137931)
 			(net 2 "GND")
 			(pinfunction "Shield")
@@ -1463,7 +1418,7 @@
 		(pad "6" smd roundrect
 			(at -1 1.3)
 			(size 1.5 1.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1666666667)
 			(net 2 "GND")
 			(pinfunction "Shield")
@@ -1473,7 +1428,7 @@
 		(pad "6" smd roundrect
 			(at 1 1.3)
 			(size 1.5 1.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1666666667)
 			(net 2 "GND")
 			(pinfunction "Shield")
@@ -1495,7 +1450,7 @@
 		(pad "6" smd roundrect
 			(at 3.025 1.3)
 			(size 1.45 1.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1724137931)
 			(net 2 "GND")
 			(pinfunction "Shield")
@@ -1514,6 +1469,7 @@
 			(pintype "passive")
 			(uuid "9a04c805-295b-413f-b8b8-e578a655807b")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_USB.3dshapes/USB_Micro-B_Amphenol_10118194-0001LF_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1554,19 +1510,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_5x10mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c7304d53-e158-4e9b-97ab-14e6337b49e3")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -1595,7 +1538,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/bd793b55-d985-48c5-906c-396cf7611ef1")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "smd_5v_3v3_usbmicro_powersupply_breakout.kicad_sch")
 		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_line
@@ -1652,12 +1595,13 @@
 		(pad "1" smd rect
 			(at 0 0)
 			(size 5 10)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 4 "+3V3")
 			(pinfunction "Pin_1")
 			(pintype "passive")
 			(uuid "70457031-aa34-4b79-a8af-ceabf28276a6")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
@@ -1683,19 +1627,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "40a372e6-de28-4816-9e2b-ac4d1c11be4a")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -1728,7 +1659,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/c5d00e04-fe83-4fa4-9e92-d594a6284e1b")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "smd_5v_3v3_usbmicro_powersupply_breakout.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -1845,7 +1776,7 @@
 		(pad "1" smd roundrect
 			(at -0.775 0 180)
 			(size 0.9 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 3 "+5V")
 			(pintype "passive")
@@ -1854,12 +1785,13 @@
 		(pad "2" smd roundrect
 			(at 0.775 0 180)
 			(size 0.9 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "GND")
 			(pintype "passive")
 			(uuid "0b4a601c-4099-4f6c-9ee8-df964f9169e2")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1900,19 +1832,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_5x10mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9685365b-cfd2-4314-89a1-83eb8b37dd41")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -1941,7 +1860,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/d02dbb67-2aff-40f7-9767-1d0bf94358da")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "smd_5v_3v3_usbmicro_powersupply_breakout.kicad_sch")
 		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_line
@@ -1998,12 +1917,13 @@
 		(pad "1" smd rect
 			(at 0 0)
 			(size 5 10)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "Pin_1")
 			(pintype "passive")
 			(uuid "9479f05a-2ffc-4937-92a8-d10cf6ea1dbe")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Capacitor_SMD:CP_Elec_4x4.5"
 		(layer "F.Cu")
@@ -2033,21 +1953,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_4x4.5"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "10f4e0d9-64d8-4b17-847b-ad6131acfe0e")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2060,7 +1967,7 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2074,7 +1981,7 @@
 		)
 		(property ki_fp_filters "CP_*")
 		(path "/faefc990-aaca-44ec-b87c-78047c8bd283")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "smd_5v_3v3_usbmicro_powersupply_breakout.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -2404,7 +2311,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "8cebe912-b2a8-46aa-8d27-c565408de342")
 		)
@@ -2422,7 +2329,7 @@
 		(pad "1" smd roundrect
 			(at -1.8 0 270)
 			(size 2.6 1.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.15625)
 			(net 4 "+3V3")
 			(pintype "passive")
@@ -2431,12 +2338,13 @@
 		(pad "2" smd roundrect
 			(at 1.8 0 270)
 			(size 2.6 1.6)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.15625)
 			(net 2 "GND")
 			(pintype "passive")
 			(uuid "3e6ccc7d-993f-4522-bd89-ffdcca854fdd")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/CP_Elec_4x4.5.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2477,19 +2385,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "115663ea-e6c0-4291-81d8-44d0e9e2cbd2")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -2518,7 +2413,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/23612b1c-ac57-47f1-bb61-36a7fc6a2655")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "smd_5v_3v3_usbmicro_powersupply_breakout.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -2635,7 +2530,7 @@
 		(pad "1" smd roundrect
 			(at -0.775 0)
 			(size 0.9 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 1 "VBUS")
 			(pintype "passive")
@@ -2644,12 +2539,13 @@
 		(pad "2" smd roundrect
 			(at 0.775 0)
 			(size 0.9 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "GND")
 			(pintype "passive")
 			(uuid "e1b1caed-ad02-43e1-afaa-82d65d29cc7b")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2686,18 +2582,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:TO-263-3_TabPin2"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8498de0b-cbf0-4b57-a455-3ea7aceb814b")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -2741,7 +2625,7 @@
 		)
 		(property ki_fp_filters "TO?220* TO?263*")
 		(path "/491cdd60-022e-4cec-8c98-32f8d4b3cfcc")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "smd_5v_3v3_usbmicro_powersupply_breakout.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -2792,7 +2676,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "1f351d44-e22a-40a6-9cf1-f7d408a5826d")
 		)
@@ -3020,7 +2904,7 @@
 		(pad "1" smd roundrect
 			(at -7.65 -2.54)
 			(size 4.6 1.1)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.227273)
 			(net 2 "GND")
 			(pinfunction "GND")
@@ -3030,7 +2914,7 @@
 		(pad "2" smd roundrect
 			(at -7.65 0)
 			(size 4.6 1.1)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.227273)
 			(net 4 "+3V3")
 			(pinfunction "VO")
@@ -3090,13 +2974,14 @@
 		(pad "3" smd roundrect
 			(at -7.65 2.54)
 			(size 4.6 1.1)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.227273)
 			(net 3 "+5V")
 			(pinfunction "VI")
 			(pintype "power_in")
 			(uuid "27bdd312-1e6a-4e38-b207-108fe3b960b7")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/TO-263-3_TabPin2.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3137,21 +3022,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "7b764672-8ffb-42d1-9b27-bdc8671ab8ce")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3164,7 +3036,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3178,7 +3050,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/efe6177f-ed2f-4c02-a2e8-719d5a73d143")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "smd_5v_3v3_usbmicro_powersupply_breakout.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -3364,6 +3236,7 @@
 			(pintype "passive")
 			(uuid "1871c81a-c7bb-4073-a09f-58d1f69c58f8")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3400,19 +3273,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_2220_5750Metric_Pad1.97x5.40mm_HandSolder"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "bbf0ba65-ec58-4985-a591-2175c72bf2a6")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -3458,7 +3318,7 @@
 		)
 		(property ki_fp_filters "Inductor_* L_* *Ferrite*")
 		(path "/3145c082-2135-4063-97e6-c2c2c95314a0")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "smd_5v_3v3_usbmicro_powersupply_breakout.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -3575,7 +3435,7 @@
 		(pad "1" smd roundrect
 			(at -2.6375 0 90)
 			(size 1.975 5.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.126582)
 			(net 1 "VBUS")
 			(pintype "passive")
@@ -3584,12 +3444,13 @@
 		(pad "2" smd roundrect
 			(at 2.6375 0 90)
 			(size 1.975 5.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.126582)
 			(net 3 "+5V")
 			(pintype "passive")
 			(uuid "1e9f70b0-daae-423e-a886-45c5b01d64cd")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_2220_5750Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3619,26 +3480,13 @@
 				)
 			)
 		)
-		(property "Value" "ESDB5V0WT"
+		(property "Value" "PESD5V0X1UAB"
 			(at 0 1.4 0)
 			(layer "F.Fab")
 			(uuid "1ceb8f75-8c94-44e3-be80-876779b6fc69")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-523"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a9f445fe-7ee7-4c7d-a3cc-3453c85d1787")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -3669,7 +3517,7 @@
 				)
 			)
 		)
-		(property "MPN" "ESDB5V0WT"
+		(property "MPN" " PESD5V0X1UAB,115"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3684,7 +3532,7 @@
 		)
 		(property ki_fp_filters "*DSN1608?2*")
 		(path "/6d407999-630b-4888-8f91-e61e2780220a")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "smd_5v_3v3_usbmicro_powersupply_breakout.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -3871,7 +3719,7 @@
 		(pad "1" smd roundrect
 			(at -0.7 0 180)
 			(size 0.6 0.7)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 1 "VBUS")
 			(pinfunction "K")
@@ -3881,13 +3729,14 @@
 		(pad "2" smd roundrect
 			(at 0.7 0 180)
 			(size 0.6 0.7)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "GND")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "6354bdeb-ab6c-4591-a225-65f0618d0112")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-523.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3907,7 +3756,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "4b1ddc26-ea1a-4399-8196-62e148bdfb40")
 	)
@@ -4675,4 +4524,5 @@
 			)
 		)
 	)
+	(embedded_fonts no)
 )
