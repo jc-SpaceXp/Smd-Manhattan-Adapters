@@ -23,4 +23,12 @@
 [[file:oscilloscope_captures/vbus/SDS814X_HD_PNG_2_03.png]]
 - Can see the 5V waveform varies by approx 50-60mV (sloping down from 5V and then periodically jumping back to 5V)
 - With the more positive ripple being around 30mV
+*** 3V3 (LDO) Output
+**** Capture 1
+[[file:oscilloscope_captures/3v3_ldo/SDS814X_HD_PNG_1.png]]
+**** Capture 2
+[[file:oscilloscope_captures/3v3_ldo/SDS814X_HD_PNG_2_01.png]]
+[[file:oscilloscope_captures/3v3_ldo/SDS814X_HD_PNG_2_02.png]]
+- Very stable output with the worst ripple being approx 17mV
+- Given the mean of the signal is 3.294V a 17mV ripple is well within spec for the min/max Vout for a 5V signal on the datasheet
 
