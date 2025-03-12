@@ -16,11 +16,11 @@
 ** Oscilloscope Analysis
 *** VBUS (Unfiltered USB 5V)
 **** Capture 1
-[[file:oscilloscope_captures/SDS814X_HD_PNG_1.png]]
+[[file:oscilloscope_captures/vbus/SDS814X_HD_PNG_1.png]]
 **** Capture 2
-[[file:oscilloscope_captures/SDS814X_HD_PNG_2_01.png]]
-[[file:oscilloscope_captures/SDS814X_HD_PNG_2_02.png]]
-[[file:oscilloscope_captures/SDS814X_HD_PNG_2_03.png]]
+[[file:oscilloscope_captures/vbus/SDS814X_HD_PNG_2_01.png]]
+[[file:oscilloscope_captures/vbus/SDS814X_HD_PNG_2_02.png]]
+[[file:oscilloscope_captures/vbus/SDS814X_HD_PNG_2_03.png]]
 - Can see the 5V waveform varies by approx 50-60mV (sloping down from 5V and then periodically jumping back to 5V)
 - With the more positive ripple being around 30mV
 
