@@ -3,11 +3,9 @@
 ** Schematic
 [[file:schematic_v04.pdf]]
 ** BOM
-[[file:smd_5v_3v3_usbmicro_powersupply_bom.csv]]
-- MPNs left blank are for generic parts, e.g. the THT header pins (any
-two pin 2.54mm pitch THT header will suffice)
-- FB1 can be interchanged with another appropriately sized ferrite-bead
-depending on the filtering needs (see below)
+[[file:smd_5v_3v3_usbmicro_powersupply_breakout_bom.csv]]
+- MPNs left blank are for generic parts, e.g. the THT header pins (any two pin 2.54mm pitch THT header will suffice)
+- FB1 can be interchanged with another appropriately sized ferrite-bead depending on the filtering needs (see below)
 *** Alternative FB1 MPNs
 - FB1 / 300R @ 100MHz: HI2220R301R-10 (currently using in project)
 - FB1 / 100R @ 100MHz: HI2220R101R-10
