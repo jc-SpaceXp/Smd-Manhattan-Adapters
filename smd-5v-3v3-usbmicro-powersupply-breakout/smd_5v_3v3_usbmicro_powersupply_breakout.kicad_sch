@@ -3025,7 +3025,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "ESDB5V0WT"
+		(property "Value" "PESD5V0X1UAB"
 			(at 39.116 56.642 0)
 			(effects
 				(font
@@ -3061,7 +3061,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "ESDB5V0WT"
+		(property "MPN" " PESD5V0X1UAB,115"
 			(at 41.91 60.96 0)
 			(effects
 				(font
